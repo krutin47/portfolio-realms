@@ -91,3 +91,4 @@ Agent/
 *.temp
 .vercel/
 .netlify/
+AGENTS.md
