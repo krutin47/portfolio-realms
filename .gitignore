@@ -82,6 +82,7 @@ $RECYCLE.BIN/
 *~
 *.orig
 *.rej
+Agent/
 
 # Temporary files and local deployment state
 /tmp/
