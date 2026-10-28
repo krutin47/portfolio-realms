@@ -34,8 +34,8 @@ export class AbilityExecutor {
         ability: MeleeAbility,
         playerPosition: Phaser.Math.Vector2,
         aimDirection: Phaser.Math.Vector2,
-        targetPosition: Phaser.Math.Vector2
+        targetBounds: Phaser.Geom.Rectangle
     ): boolean {
-        return ability.isObjectInsideHitbox(playerPosition, aimDirection, targetPosition);
+        return ability.intersectsRectangle(playerPosition, aimDirection, targetBounds);
     }
 }
