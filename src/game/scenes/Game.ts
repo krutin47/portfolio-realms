@@ -69,8 +69,8 @@ export class Game extends Scene {
         );
 
         this.enemy = this.add.rectangle(
-            this.scale.width / 2,
-            this.scale.height / 2 + 100,
+            this.scale.width / 2 + 100,
+            this.scale.height / 2,
             enemyWidth,
             enemyHeight,
             0xff0000
@@ -141,7 +141,7 @@ export class Game extends Scene {
                     this.meleeAbility,
                     playerPosition,
                     aimDirection,
-                    targetPosition
+                    targetBounds
                 )
             ) {
                 console.log("Hit");
